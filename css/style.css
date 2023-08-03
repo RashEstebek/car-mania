@@ -1,0 +1,922 @@
+/* -------------------Fonts------------------- */
+
+/* write some css code */
+@font-face {
+	font-family: 'Geomanist';
+	font-display: swap;
+	src: url("../fonts/Geomanist-Regular/Geomanist-Regular.eot");
+	src: local('Geomanist'),
+		url('../fonts/Geomanist-Regular/Geomanist-Regular.woff2') format('woff2'), 
+		url('../fonts/Geomanist-Regular/Geomanist-Regular.woff') format('woff'),
+		url('../fonts/Geomanist-Regular/Geomanist-Regular.ttf') format('ttf'),
+		url('../fonts/Geomanist-Regular/Geomanist-Regular.eot') format('eot'),
+		url("../fonts/Geomanist-Regular/Geomanist-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geomanist Book';
+	font-display: swap;
+	src: local('Geomanist Book'),
+		url('../fonts/Geomanist-Book/Geomanist-Book.woff2') format('woff2'), 
+		url('../fonts/Geomanist-Book/Geomanist-Book.woff') format('woff'),
+		url('../fonts/Geomanist-Book/Geomanist-Book.ttf') format('ttf'),
+		url('../fonts/Geomanist-Book/Geomanist-Book.eot') format('eot'),
+		url("../fonts/Geomanist-Book/Geomanist-Book.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geomanist';
+	font-display: swap;
+	src: local('Geomanist'),
+		url('../fonts/Geomanist-Medium/Geomanist-Medium.woff2') format('woff2'), 
+		url('../fonts/Geomanist-Medium/Geomanist-Medium.woff') format('woff'),
+		url('../fonts/Geomanist-Medium/Geomanist-Medium.ttf') format('ttf'),
+		url('../fonts/Geomanist-Medium/Geomanist-Medium.eot') format('eot'),
+		url("../fonts/Geomanist-Medium/Geomanist-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geomanist';
+	font-display: swap;
+	src: local('Geomanist'),
+		url('../fonts/Geomanist-Bold/Geomanist-Bold.woff2') format('woff2'), 
+		url('../fonts/Geomanist-Bold/Geomanist-Bold.woff') format('woff'),
+		url('../fonts/Geomanist-Bold/Geomanist-Bold.ttf') format('ttf'),
+		url('../fonts/Geomanist-Bold/Geomanist-Bold.eot') format('eot'),
+		url("../fonts/Geomanist-Bold/Geomanist-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* -------------------Zeroing------------------- */
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active{
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	color: #1D1E21;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Geomanist';
+	font-weight: 400;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display:none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+	border: 0;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+	font-weight: inherit; 
+}
+
+/* -------------------Technical------------------- */
+
+._container {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+._card-cover {
+	flex: 1 1 auto;
+	padding: 8px 8px 12px 8px;
+}
+
+._card-inner-cover {
+	padding: 0px 8px;
+}
+
+._p-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: 0.1225em;
+	color: #ACAEB4;
+	text-transform: uppercase;
+}
+
+._h2-subtitle {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 124%;
+	letter-spacing: 0.0125em;
+	color: #1D1E21;
+}
+
+/* -------------------Header------------------- */
+
+.header {
+	padding: 25px 0px 25px 0px;
+	background: linear-gradient(283.63deg, #F1F3FC 0%, #F7F7FB 100%);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.navbar__logo {
+}
+
+.navbar__menu {
+	display: flex;
+}
+
+.navbar__menu a{
+	color: #1D1E21;
+}
+
+.navbar__menu li:not(:last-child){
+	margin: 0px 32px 0px 0px;
+}
+
+/* -------------------Main------------------- */
+
+.main {
+}
+
+/* -------------------Description------------------- */
+
+.description {
+	background: linear-gradient(283.63deg, #F1F3FC 0%, #F7F7FB 100%);
+	padding: 100px 0px 100px 0px;
+}
+
+
+.description-block {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.content {
+	flex-basis: 45%;
+}
+
+.content__title {
+	font-family: 'Geomanist';
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 70.4px;
+	margin: 0px 0px 16px 0px;
+}
+
+
+.content__title_green {
+	display: inline-block;
+	color: #20BFB6;
+	height: 87px;
+	background: url('../img/underline.svg') bottom no-repeat;
+}
+
+.content__subtitle {
+	color: #929395;
+	font-size: 18px;
+	line-height: 26px;
+	margin: 0px 0px 32px 0px;
+}
+
+.content__buttons {
+	display: flex;
+}
+
+.content__buttons a{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 130px;
+	height: 44px;
+	font-size: 12px;
+	color: white;
+	background: black;
+	border-radius: 6px;
+	padding: 0px 6px;
+}
+
+.content__buttons a:hover{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 130px;
+	height: 44px;
+	font-size: 12px;
+	color: black;
+	background: #20BFB6;
+	border-radius: 6px;
+	padding: 0px 6px;
+}
+
+.content__buttons a:not(:last-child) {
+	margin: 0px 12px 0px 0px;
+}
+
+.content__button_apple {
+	
+}
+
+.content__button_play {
+}
+
+.icon-apple {
+	font-size: 20px;
+}
+
+.icon-google-play {
+	font-size: 20px;
+}
+
+.center {
+}
+
+.small {
+	font-size: 10px;
+}
+
+.medium {
+	font-weight: 500;
+}
+
+.description-block__img-wrapper {
+	flex-basis: 55%;
+}
+
+.description-block__img {
+	max-width: 90%;
+	top: 0;
+	left: 0;
+}
+
+/* -------------------Search-Bar------------------- */
+
+.search-bar {
+}
+.search-block {
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 12px 24px rgba(169, 169, 173, 0.09);
+	border-radius: 16px;
+	height: 86px;
+	background-color: #FFFFFF;
+	padding: 21px 32px;
+	margin: -43px 0px 0px 0px;
+}
+.location {
+	flex-basis: 170px;
+}
+.location p{
+	font-weight: 700;
+	line-height: 14px;
+	margin: 0px 0px 12px 0px;
+	color: #1D1E21;
+}
+.location input {
+	width: 100%;
+}
+.location input::placeholder {
+    font-size: 18px;
+	line-height: 18px;
+	color: #BFBFBF;
+}
+.pickup-date {
+	padding: 0px 0px 0px 32px;
+	border-left: 1px solid #EBEBEB;
+}
+.pickup-date p:first-child{
+	font-weight: 700;
+	line-height: 14px;
+	margin: 0px 0px 12px 0px;
+	color: #1D1E21;
+}
+.pickup-date p:last-child{
+	font-size: 18px;
+	line-height: 18px;
+	color: #1D1E21;
+}
+.return-date {
+	padding: 0px 0px 0px 32px;
+	border-left: 1px solid #EBEBEB;
+}
+.return-date p:first-child{
+	font-weight: 700;
+	line-height: 14px;
+	margin: 0px 0px 12px 0px;
+}
+.return-date p:last-child{
+	font-size: 18px;
+	line-height: 18px;
+	color: #1D1E21;
+}
+.search {
+	display: flex;
+	align-items: center;
+}
+.search button{
+	font-size: 18px;
+	background: #20BFB6;
+	border-radius: 14px;
+	padding: 22px 60px;
+	color: #FFFFFF;
+}
+.search button:hover{
+	font-size: 18px;
+	background: #FFFFFF;
+	border-radius: 14px;
+	border: 5px outset #20BFB6;
+	padding: 17px 55px;
+	color: #20BFB6;
+}
+.search button:active{
+	font-size: 18px;
+	background: #20BFB6;
+	border-radius: 14px;
+	border: 5px outset #20BFB6;
+	padding: 17px 55px;
+	color: white;
+}
+
+/* -------------------Car-Brands------------------- */
+
+.car-brands {
+}
+.brands-block {
+	display: flex;
+	justify-content: space-between;
+	margin: 80px 0px 0px 0px;
+}
+
+/* -------------------How-It-Work------------------- */
+
+.how-it-work {
+	height: 500px;
+	margin: 132px 0px 0px 0px;
+}
+.steps {
+}
+.steps > p {
+	text-align: center;
+	margin: 0px 0px 12px 0;
+}
+.steps > h2 {
+	text-align: center;
+	margin: 0px 0px 54px 0;
+}
+.steps__block {
+	display: flex;
+	justify-content: space-around;
+}
+.steps__location,
+.steps__date,
+.steps__book {
+	text-align: center;
+	
+}
+.steps__loc-icon, 
+.steps__book_icon {
+	display: flex;
+	width: 129px;
+	height: 129px;
+	background: #FFFFFF;
+	box-shadow: 0px 12px 32px rgba(169, 169, 173, 0.16);
+	border-radius: 24px;
+	margin: 0px auto 40px auto;
+}
+.steps__loc-icon img,
+.steps__book_icon img,
+.steps__date-icon img {
+	margin: auto;
+}
+.steps__date {
+	
+}
+.steps__date-icon {
+	display: flex;
+	width: 129px;
+	height: 129px;	
+	background: radial-gradient(115.89% 115.89% at 49.61% 115.89%, #20BFB6 0%, #09FFF1 100%);
+	box-shadow: 0px 16px 32px rgba(32, 191, 182, 0.3);
+	border-radius: 24px;
+	margin: 0px auto 40px auto;
+}
+.steps__location p, 
+.steps__date p,
+.steps__book p {
+	font-family: 'Geomanist';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0.0125em;
+	color: #1D1E21;
+	margin: 0px 0px 16px 0px;
+}
+.steps__location small, 
+.steps__date small,
+.steps__book small {
+	font-family: 'Geomanist';
+	font-size: 16px;
+	line-height: 144%;
+	letter-spacing: 0.01em;
+	color: #929395;
+}
+.steps__horizontal-line {
+	width: 173px;
+}
+hr {
+	border: 1.5px dashed #707070;
+	width: 100%;
+	margin: 64.5px 0px 0px 0px;
+}
+
+/* -------------------Why-Choose-Us------------------- */
+
+.why-choose-us {
+	background: linear-gradient(270deg, #FAFAFA 0%, rgba(250, 250, 250, 0) 203.13%);
+	margin: 100px 0px 0px 0px;
+	height: 662px;
+}
+.advantages-block {
+	display: flex;
+	justify-content: space-evenly;
+}
+.advantages-block__img {
+}
+.advantages-block__text {
+	display: flex;
+	flex-direction: column;
+}
+.advantages-block__text > p {
+	margin: 90px 0px 16px 0px;
+}
+.advantages-block__text > h2 {
+	margin: 0px 0px 32px 0px;
+}
+.advantage-block__wrapper {
+	flex-grow: 1;
+}
+.advantages-block__cards {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.min-card1 {
+	display: flex;
+}
+.min-card1__icon,
+.min-card2__icon,
+.min-card3__icon,
+.min-card4__icon {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	background: #FFFFFF;
+	box-shadow: 0px 12px 32px rgba(169, 169, 173, 0.16);
+	border-radius: 12px;
+	margin: 0px 20px 0px 0px;
+}
+.min-card1__icon img,
+.min-card2__icon img,
+.min-card3__icon img,
+.min-card4__icon img {
+	margin: auto;
+}
+
+.min-card1__text p,
+.min-card2__text p,
+.min-card3__text p,
+.min-card4__text p{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	letter-spacing: 0.0125em;
+	color: #1D1E21;
+	margin: 0px 0px 8px 0px;
+}
+.min-card1__text small,
+.min-card2__text small,
+.min-card3__text small,
+.min-card4__text small{
+	font-size: 14px;
+	line-height: 144%;
+	letter-spacing: 0.01em;
+	color: #929395;
+}
+.min-card2 {
+	display: flex;
+}
+.min-card2__icon {
+}
+.min-card2__text {
+}
+.min-card3 {
+	display: flex;
+}
+.min-card3__icon {
+}
+.min-card3__text {
+}
+.min-card4 {
+	display: flex;
+}
+.min-card4__icon {
+}
+.min-card4__text {
+}
+
+/* -------------------Rental-Deals------------------- */
+
+.rental-deals {
+	margin: 100px 0px 0px 0px;
+	height: 100%;
+}
+.deals {
+}
+.deals > p {
+	text-align: center;
+	margin: 0px 0px 16px 0px;
+}
+.deals > h2 {
+	text-align: center;
+	margin: 0px 0px 54px 0px;
+}
+.deals > a {
+	display: block;
+	width: 234px;
+	background: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	border-radius: 38px;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0.0025em;
+	color: #1D1E21;
+	margin: auto;
+	padding: 16px 40px;
+}
+.deals > a img{
+	margin: 0px 0px 0px 8px;
+}
+.deals__cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	margin: 0px 0px 54px 0px;
+}
+.deals__cards_img {
+	background: #F7F7FB;
+	border-radius: 8px;
+	margin: 0px 0px 12px 0px;
+}
+.deals__cards_rating {
+	margin: 0px 0px 16px 0px;
+}
+.rating {
+	display: flex;
+	margin: 0px 0px 16px 0px;
+}
+.rating img {
+	margin: 0px 4px 0px 0px;
+}
+.rating p {
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: 0.0025em;
+	color: #AAAAAA;
+}
+.rating span {
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0.0025em;
+	color: #1D1E21;
+}
+.car-name {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0.0025em;
+}
+.deals__cards_equipment {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0px 25px 0px 0px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #929395;
+}
+.deals__cards_equipment > div {
+	margin: 0px 0px 8px 0px;
+}
+.deals__cards_equipment span {
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+}
+.deals__cards_price {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #EBEBEB;
+	padding: 20px 16px;
+	line-height: 14px;
+	letter-spacing: 0.0025em;
+}
+.deals__cards_price span{
+	font-size: 12px;
+	line-height: 12px;
+	color: #AAAAAA;
+}
+.deals__cards_price a{
+	letter-spacing: 0.0025em;
+	color: #20BFB6;
+}
+.deals__cards_price img{
+	margin: 0px 0px 0px 8px;
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	border-radius: 12px;
+}
+
+/* -------------------Testimonials------------------- */
+
+.testimonials {
+	margin: 100px 0px 0px 0px;
+	height: 100%;
+}
+.reviews{
+}
+.reviews > p{
+	text-align: center;
+	margin: 0px 0px 16px 0px;
+}
+.reviews > h2{
+	text-align: center;
+	margin: 0px 0px 54px 0px;
+}
+.reviews-block {
+	display: flex;
+	justify-content: space-between;
+}
+.arrow-left {
+	display: flex;
+	align-items: center;
+}
+.arrow-left__background {
+	box-shadow: 4px 12px 32px rgba(82, 82, 84, 0.16);
+	border-radius: 54px;
+	padding: 16px;
+}
+.client {
+	display: flex;
+	gap: 72px;
+	width: 777px;
+}
+.reviews-block__img img {
+	width: 364px;
+	height: 456px;
+}
+.reviews-block__text {
+	display: flex;
+	flex-direction: column;
+}
+.reviews-block__text > p{
+	flex: 1 1 auto;
+	font-size: 24px;
+	line-height: 164%;
+	letter-spacing: 0.0125em;
+}
+.reviews-block__bottom > p {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.0125em;
+	margin: 0px 0px 12px 0px;
+}
+.reviews-block__rating {
+	display: flex;
+	align-items: center;
+	margin: 0px 0px 54px 0px;
+}
+.reviews-block__rating img {
+	margin: 0px 8px 0px 0px;
+}
+.reviews-block__rating p {
+	font-size: 18px;
+	line-height: 18px;
+	letter-spacing: 0.0025em;
+	margin: 0px 8px 0px 0px;
+}
+.arrow-right {
+	display: flex;
+	align-items: center;
+}
+.arrow-right__background {
+	background: #20BFB6;
+	box-shadow: -6px 6px 24px rgba(32, 191, 182, 0.25);
+	border-radius: 50px;
+	padding: 16px;
+}
+
+/* -------------------Download-App------------------- */
+
+.download-app {
+	margin: 200px 0px 0px 0px;
+}
+.download-cover {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	height: 438px;
+	margin: 0px 0px -166px 0px;
+}
+.download-cover__phones-img {
+	position: absolute;
+	bottom: 0;
+	right: 93px;
+}
+.download-cover__ellipse-img_black{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+}
+.download-cover__ellipse-img_white {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.download-cover__background {
+	display: flex;
+	height: 332px;
+	background: radial-gradient(73.36% 994.87% at 73.36% 50.16%, #20BFB6 0%, #00F9EB 100%);
+	border-radius: 16px;
+}
+.download-cover__content {
+	padding: 57px 0px 57px 110px;
+}
+.download-cover__content > p {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 120%;
+	letter-spacing: 0.01em;
+	color: #000000;
+	margin: 0px 0px 12px 0px;
+} 
+.download-cover__content > small {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 144%;
+	letter-spacing: 0.01em;
+	color: #000000;
+	margin: 0px 0px 40px 0px;
+}
+.custom-buttons a{
+	position: relative;
+	z-index: 1;
+}
+.custom-buttons a:hover{
+	position: relative;
+	background: rgb(227, 177, 68);
+	z-index: 1;
+}
+
+/* -------------------Footer------------------- */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	background: #010101;
+	height: 441px;
+}
+.footer-top-part {
+	flex: 1 1 auto;
+}
+.footer__cover {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content:flex-end;
+}
+.footer__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 0px 40px 0px;
+}
+.footer__address {
+	font-size: 16px;
+	line-height: 144%;
+	letter-spacing: 0.01em;
+	color: #D9DBDE;
+}
+.footer__phone-number {
+	font-size: 16px;
+	line-height: 16px;
+	color: #FFFFFF;
+}
+.footer__phone-number span {
+	margin: 0px 0px 0px 12px;
+}
+.footer__follow-us {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
+.footer__follow-us p {
+	text-align: right;
+	margin: 0px 0px 10px 0;
+}
+.footer__follow-us i:not(:last-of-type) {
+	margin: 0px 16px 0px 0;
+}
+.footer__follow-us i {
+	display: inline-block;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	padding: 8px;
+	border: 1px solid #505865;
+	border-radius: 50%;
+}
+.footer-bottom-part {
+}
+.footer__hr {
+	border: 1px solid #505865;
+	margin: 0;
+}
+.footer__rights {
+	display: flex;
+	padding: 32px 0px;
+}
+.footer__rights p {
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	margin: auto;
+}
+

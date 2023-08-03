@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Geomanist-Regular';
+  src: url(./Geomanist-Regular.eot);
+  src: url(./Geomanist-Regular.eot?#iefix) format('embedded-opentype'),
+       url(./Geomanist-Regular.svg#Geomanist-Regular) format('svg'),
+       url(./Geomanist-Regular.ttf) format('truetype'),
+       url(./Geomanist-Regular.woff) format('woff'),
+       url(./Geomanist-Regular.woff2) format('woff2');
+}

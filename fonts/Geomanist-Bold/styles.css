@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Geomanist-Bold';
+  src: url(./Geomanist-Bold.eot);
+  src: url(./Geomanist-Bold.eot?#iefix) format('embedded-opentype'),
+       url(./Geomanist-Bold.svg#Geomanist-Bold) format('svg'),
+       url(./Geomanist-Bold.ttf) format('truetype'),
+       url(./Geomanist-Bold.woff) format('woff'),
+       url(./Geomanist-Bold.woff2) format('woff2');
+}
